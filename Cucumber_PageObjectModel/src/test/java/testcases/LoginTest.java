@@ -31,6 +31,7 @@ public class LoginTest {
 	public void login() {
 		driver=new ChromeDriver();
 		//driver=new FirefoxDriver();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		HomePage hp=PageFactory.initElements(driver, HomePage.class);
